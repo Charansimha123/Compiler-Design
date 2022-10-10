@@ -1,0 +1,27 @@
+%{
+	/* Definition section */
+%}
+
+/* Rule Section */
+%%
+
+[1-9][0-9]{9} {printf("\nMobile Number Valid\n");}
+
+.+ {printf("\nMobile Number Invalid\n");}
+
+%%
+
+// driver code
+int main()
+{
+	printf("\nEnter Mobile Number : ");
+	yylex();
+	printf("\n");
+	return 0;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
